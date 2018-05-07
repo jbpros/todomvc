@@ -39,7 +39,16 @@ _If you have other helpful links to share, or find any of the links above no lon
 
 The app uses [Karma](http://karma-runner.github.io/0.12/index.html) to run the tests located in the `test/` folder. To run the tests:
 
-```
-$ npm install
-$ npm test
-```
+Install dependencies:
+
+    $ npm install
+
+Make sure webdriver is ready:
+
+    $ ./node_modules/.bin/webdriver-manager update
+    $ ./node_modules/.bin/webdriver-manager start
+
+Run all tests:
+
+    $ npm test
+    $ npm run cucumber
