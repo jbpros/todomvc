@@ -1,7 +1,12 @@
 const { Before, Given, When, Then } = require('cucumber')
+const chai = require('chai');
+const chaiAsPromised = require('chai-as-promised');
+const expect = chai.expect;
+
+chai.use(chaiAsPromised);
 
 Before(function () {
-  return browser.get('index.html')
+  return browser.get('index.html');
 });
 
 Given('things', function () {
