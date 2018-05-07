@@ -1,4 +1,8 @@
-const { Given, When, Then } = require('cucumber')
+const { Before, Given, When, Then } = require('cucumber')
+
+Before(function () {
+  return browser.get('index.html')
+});
 
 Given('things', function () {
   return 'pending';
